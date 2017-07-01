@@ -5,10 +5,10 @@
 The (initial) goal of the project is to create a personalised language model, i.e. a language model which can generate dialogue that resembles a specific speaker. Benchmark language models are typically trained on a very large text corpus (Wikipedia, for example). A challenge of this project is to build a robust, personalised language model despite having a relatively small amount of text specific to the individual speaker.
 
 ### Data
-Television show scripts, e.g. Seinfeld, The Simpsons, which are long running and have consistent characters. As stated above, this is still a very small text corpus relative to that used in most language models. This is supplemented with:
--word2vec, GLoVe word vectors
--pretraining on larger (related) text corpus, e.g. other characters in the TV show, movie scripts, etc.
-
+Television show scripts, e.g. Seinfeld, which are long running and have consistent characters. As stated above, this is still a very small text corpus relative to that used in most language models. This is supplemented with:  
+-word2vec, GLoVe word vectors  
+-pretraining on larger (related) text corpus, e.g. other characters in the TV show, movie scripts, etc.  
+  
 All data is stored in the 'data/' folder. Seinfeld scripts are stored in an SQL database. The data is preprocessed and train/test text files were created using preprocessing.py.
 
 ### Model
