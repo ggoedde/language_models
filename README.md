@@ -6,10 +6,10 @@ The (initial) goal of the project is to create a personalised language model, i.
 
 ### Data
 Television show scripts, e.g. Seinfeld, which are long running and have consistent characters. As stated above, this is still a very small text corpus relative to that used in most language models. This is supplemented with:  
--word2vec, GLoVe word vectors  
+-word embeddings initialized with GLoVe word vectors  
 -pretraining on larger (related) text corpus, e.g. other characters in the TV show, movie scripts, etc.  
   
-All data is stored in the 'data/' folder. Seinfeld scripts are stored in an SQL database. The data is preprocessed and train/test text files were created using preprocessing.py.
+All data is stored in the 'data/' folder. Seinfeld scripts are stored in an SQL database. The data is preprocessed and train/test text files were created using preprocessing.py. GloVe vectors have not been uploaded to Github. If you wish to run the model with GloVe vectors, please create a new folder 'data/glove/' and download the 'glove.6B.zip' file located here https://nlp.stanford.edu/projects/glove/
 
 ### Model
 Word language model using recurrent neural networks (LSTM, GRU, basic RNN). 
