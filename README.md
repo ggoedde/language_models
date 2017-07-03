@@ -6,7 +6,7 @@ The (initial) goal of the project is to create a personalised language model, i.
 
 ### Data
 Television show scripts, e.g. Seinfeld, which are long running and have consistent characters. As stated above, this is still a very small text corpus relative to that used in most language models. This is supplemented with:  
--word embeddings initialized with GLoVe word vectors  
+-word embeddings initialized with GloVe word vectors  
 -pretraining on larger (related) text corpus, e.g. other characters in the TV show, movie scripts, etc.  
   
 All data is stored in the 'data/' folder. Seinfeld scripts are stored in an SQL database. The data is preprocessed and train/test text files were created using preprocessing.py. GloVe vectors have not been uploaded to Github. If you wish to run the model with GloVe vectors, please create a new folder 'data/glove/' and download the 'glove.6B.zip' file located here https://nlp.stanford.edu/projects/glove/
@@ -31,7 +31,7 @@ Model can be trained directly using train.py. Once a model is trained and saved,
 run.py can instead be used to either train/test/generate text. Furthermore, it can be used to easily set command line arguments, as well as use random hyperparameters and run monte carlo cross validation. Refer to comments in these files for full details on how to run them.
 
 ### Other
-Models are trained using python 3.5+ and TensorFlow 1.1.  
+Models are trained using python 3.5+ and TensorFlow 1.1.0  
 Initial code based on TensorFlow RNN tutorial https://github.com/tensorflow/models/tree/master/tutorials/rnn/ptb  
 Seinfeld scripts from https://github.com/colinpollock/seinfeld-scripts
 
